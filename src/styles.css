@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.cdk-overlay-backdrop{
+    position: initial !important;
+}
+
+.cdk-overlay-backdrop-showing{
+    position: initial !important;
+}
+
+cdk-overlay-dark-backdrop{
+    position: initial !important;
+}
