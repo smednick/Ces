@@ -3,7 +3,7 @@ import { ViewerConfiguration, AcMapLayerProviderComponent, CesiumService } from 
 import { AppSettingsService } from '../app-settings-service.service';
 import { MapLayerProviderOptions } from 'angular-cesium';
 //import { TracksLayerComponent } from 'tracks-layer';
-import { SceneMode } from 'angular-cesium';
+import { SceneMode, AcRectangleDescComponent  } from 'angular-cesium';
 import { MapLayersService } from 'angular-cesium/src/angular-cesium/services/map-layers/map-layers.service';
 import { ViewerFactory } from 'angular-cesium/src/angular-cesium/services/viewer-factory/viewer-factory.service';
 
@@ -38,7 +38,7 @@ export class MpComponent {
 
 			//this.MapLayersService.drawAllLayers();
 		};
-		
+		this.appSettingsService.keyboardControl = true;
 		this.appSettingsService.showTracksLayer = true;
 	}
 	

@@ -2,7 +2,7 @@ import { Component, AfterViewInit, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ActionType } from 'angular-cesium';
 import { AcNotification } from 'angular-cesium';
-import { AcLayerComponent } from 'angular-cesium';
+import { AcLayerComponent, AcEllipseComponent } from 'angular-cesium';
 import {Subscriber} from "rxjs/Subscriber";
 
 @Component({

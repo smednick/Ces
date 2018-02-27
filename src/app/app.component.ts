@@ -5,7 +5,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 //import {MatDialog, MatIconRegistry, MatSidenav} from '@angular/material';
 import { AppSettingsService, TracksType } from './app-settings-service.service';
 import { MapsManagerService } from 'angular-cesium';
-import { DraggableToMapService } from 'angular-cesium';
+import { DraggableToMapService, AcEllipseComponent } from 'angular-cesium';
 
 @Component({
   selector: 'app-root',

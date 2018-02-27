@@ -13,6 +13,19 @@
             color: 'mix(color(\'white\'), color(\'lightgreen\'), min(${area} / 10000.0, 1.0))'
         }">
     </ac-3d-tile-layer>
+    <ac-ellipse [props]="{
+            position: position,
+            semiMajorAxis:50000.0,
+            semiMinorAxis:25000.0,
+            rotation : 0.785398
+          }">
+    </ac-ellipse>
+       <!-- <ac-rectangle-desc props="{
+             show : rectangle.show,
+             coordinates : rectangle.positions,
+             material : rectangle.color
+           }">
+           </ac-rectangle-desc> -->
     <!-- *ngIf="appSettingsService.showMapLayer" -->
     <!-- *ngIf="appSettingsService.show3dtiles" -->
     <!-- <tracks-layer #layer [show]="appSettingsService.showTracksLayer" [tracksType]="appSettingsService.tracksDataType"></tracks-layer> -->
@@ -41,5 +54,5 @@
 
     <!-- <toolbar-example></toolbar-example> -->
     <!-- <context-menu-layer></context-menu-layer> -->
-    <!-- <keyboard-control-layer *ngIf="appSettingsService.keyboardControl"></keyboard-control-layer> -->
+    <keyboard-control-layer *ngIf="appSettingsService.keyboardControl"></keyboard-control-layer>
 </ac-map>
